@@ -10,10 +10,10 @@
 
 Pages - "page" is the index file for the route/folder. They are server components by default (you can set to client components)
 
-Dynamic Routes with slugs - We are using slugs in "/blog" route:
-\[slug]: Any route after blog (e.g blog/1, blog/aaa).
-\[...slug]: Catch all routes (e.g blog/1/2/3/4, blog/a/b/c)
-\[[...slug]]: Optional catch all routes will also include the route without parameter (e.g blog/, blog/a/b/c)
+Dynamic Routes with slugs - We are using slugs in "/blog" route:<br>
+\[slug]: Any route after blog (e.g blog/1, blog/aaa).<br>
+\[...slug]: Catch all routes (e.g blog/1/2/3/4, blog/a/b/c)<br>
+\[[...slug]]: Optional catch all routes will also include the route without parameter (e.g blog/, blog/a/b/c)<br>
 
 <!--
 ```bash
