@@ -15,6 +15,8 @@ Dynamic Routes with slugs - We are using slugs in "/blog" route:<br>
 \[...slug]: Catch all routes (e.g blog/1/2/3/4, blog/a/b/c)<br>
 \[[...slug]]: Optional catch all routes will also include the route without parameter (e.g blog/, blog/a/b/c)<br>
 
+Route Grouping - A route group can be created by wrapping a folder’s name in parenthesis (marketing). Organize routes without affecting the URL structure, Opting-in specific route segments into a layout, Create multiple root layouts by splitting your application
+
 <!--
 ```bash
 code
