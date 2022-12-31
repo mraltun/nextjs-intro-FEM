@@ -21,6 +21,13 @@ Route Grouping - A route group can be created by wrapping a folder’s name in p
 
 React Server Components - All components inside the app directory are React Server Components by default. Server components are components that never leave the server, so there is never any Javascript that gets shipped to the client. This means that server components can't use things like hooks and client side APIs that the browser provides. The result of rendering these components are streamed to the client and cached on a per route segment basis. By default, all components in the app directory in Next.js are server components. Check out contact page.
 
+In React Server Components <br>
+Pages and Layouts might need data before they render. Tapping into APIs, databases, and other sources. Data is cached and streamed to the client automatically. It is recommended to fetch data in server components do the backend can handle this. There are a few reasons for this:
+
+They have access to backends like DBs<br>
+Keeping your app more secure by not exposing API keys and other secrets to the client<br>
+Reduce the load on the main thread in the browser by having both fetching and rendering happening in the same environment on the server.
+
 React Client Components - If the components need hooks like useState and useEffect, then it to be a client component.
 
 Always use server components for all of your components unless<br>
