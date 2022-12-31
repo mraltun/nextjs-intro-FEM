@@ -19,6 +19,17 @@ Dynamic Routes with slugs - We are using slugs in "/blog" route:<br>
 
 Route Grouping - A route group can be created by wrapping a folder’s name in parenthesis (marketing). Organize routes without affecting the URL structure, Opting-in specific route segments into a layout, Create multiple root layouts by splitting your application
 
+React Server Components - All components inside the app directory are React Server Components by default. Server components are components that never leave the server, so there is never any Javascript that gets shipped to the client. This means that server components can't use things like hooks and client side APIs that the browser provides. The result of rendering these components are streamed to the client and cached on a per route segment basis. By default, all components in the app directory in Next.js are server components. Check out contact page.
+
+React Client Components - If the components need hooks like useState and useEffect, then it to be a client component.
+
+Always use server components for all of your components unless<br>
+It needs interactivity and event listeners (onClick(), onChange(), etc)<br>
+It uses State and Lifecycle Effects (useState(), useReducer(), useEffect(), etc)<br>
+It uses browser-only APIs<br>
+It needs custom hooks that depend on state, effects, or browser-only APIs<br>
+Use React Class components
+
 ## Navigation
 
 Next.js does so much behind the scene when it comes to handling navigation for our pages. From the docs:
