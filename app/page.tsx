@@ -15,7 +15,7 @@ const getData = async () => {
 export default async function Home() {
   // "Don't render jsx until I get the data"
   const data = await getData();
-  const post = data.data.children[0].data.title;
+  const post = data.data.children[1].data.title;
 
   return (
     <main className={styles.main}>

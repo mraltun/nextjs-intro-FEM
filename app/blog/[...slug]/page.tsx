@@ -1,4 +1,5 @@
-const BlogPost = () => {
+const BlogPost = ({ params }) => {
+  console.log(params);
   // Dynamic routing. This will show up after type anything "/blog/" (blog/post). We are using "catch all routes" (...)  (blog/post/1)
   return <div>BlogPost</div>;
 };
