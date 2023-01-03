@@ -1,13 +1,18 @@
-// const getData = async (slug) => {
-//   const post = await getDataFromCMS(slug);
-//   return post;
-// };
+const delay = (time) =>
+  new Promise((resolve) => {
+    setTimeout(() => resolve(1), time);
+  });
+
+const getData = async (slug) => {
+  const post = await delay(2000);
+  return post;
+};
 
 const BlogPost = async ({ params }) => {
-  // const { slug } = params;
-  // const post = await getData(slug);
+  const { slug } = params;
+  const post = await getData(slug);
   // Dynamic routing. This will show up after type anything "/blog/" (blog/post). We are using "catch all routes" (...)  (blog/post/1)
-  return <div>Post</div>;
+  return <div>{post.slug}</div>;
 };
 
 export default BlogPost;
