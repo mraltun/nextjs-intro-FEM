@@ -1,7 +1,4 @@
-const delay = (time) =>
-  new Promise((resolve) => {
-    setTimeout(() => resolve(1), time);
-  });
+import delay from "../../../lib/delay";
 
 const getData = async (slug) => {
   const post = await delay(2000);
